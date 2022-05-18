@@ -458,42 +458,6 @@ footer {
 }
 
 
-@media (max-width: 40rem) {
-  
-  .project__wrapper {
-    border-radius: 0;
-  }
-
-  .project__beschrijving {
-    padding: 0;
-    left: 0;
-    width: 100%;
-  }
-
-  .project__beschrijving--para {
-    display: none;
-  }
-
-  .project__beschrijving--links {
-    display: flex;
-    justify-content: center;
-  }
-
-  .project__beschrijving--title {
-    font-size: 2rem;
-    line-height: 1;
-    text-align: center;
-  }
-
-  .project__beschrijving--sub-title {
-    text-align: center;
-    margin: 0.75rem 0;
-  }
-  .persoonlijk_logo{
-    font-size: 1rem;
-  }
-}
-
 
 
 
