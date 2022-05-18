@@ -14,5 +14,5 @@
 ## Ik kan geen .pdf inleveren, want ik heb problemen met mijn XAMPP control panel, Hidde gaat mij vrijdag helpen.
 
 
-## Live vieuw van de portfolio: http://32778.hosts1.ma-cloud.nl/f1m2js/Portfolio/
+## Live view van de portfolio: http://32778.hosts1.ma-cloud.nl/f1m2js/Portfolio/
 
