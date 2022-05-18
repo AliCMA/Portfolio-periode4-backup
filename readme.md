@@ -10,7 +10,9 @@
 
 ## Link naar Trello bord: https://trello.com/b/7RYn5TUJ/portfolio-ali-celiksu
 
-## Link naar database: http://localhost/phpmyadmin/index.php?route=/table/structure&db=makeitrain&table=portfolio
+## Link naar database: http://localhost/phpmyadmin/index.php?route=/table/structure&db=makeitrain&table=portfolio 
+## Ik kan geen .pdf inleveren, want ik heb problemen met mijn XAMPP control panel, Hidde gaat mij vrijdag helpen.
 
-## Live vieuw van de portfolio: https://32778.hosts1.ma-cloud.nl/f1m2js/Portfolio1905/
-"# Portfolio-periode4-backup" 
+
+## Live vieuw van de portfolio: http://32778.hosts1.ma-cloud.nl/f1m2js/Portfolio/
+
