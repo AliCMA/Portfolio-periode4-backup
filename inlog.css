@@ -8,7 +8,9 @@
 }
 
 
-
+body{
+  min-height: 100vh;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -429,6 +431,10 @@ section .loader .dot {
 
 footer {
   background-color: #242424;
+  position: absolute;
+  bottom:0;
+  right: 0;
+  left: 0;
 }
 
 .footer__social--lijst {
@@ -444,7 +450,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 8% 0;
+  padding: 4% 0;
 }
 
 .footer__logo--img {

@@ -8,6 +8,7 @@
   <title>Portfolio Ali Çeliksu</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script src="filtler.js" defer></script>
 </head>
 <body>
 
@@ -51,10 +52,8 @@
       <div class="flex flex-1">
         <div class="over-mij__info row">
           <div class="over-mij__info--container">
-            <figure class="over-mij__picture--logoschool">
-              <img src="img/documenten/logoma2.webp" class="over-mij__picture" alt="Logo van de school waar ik op zit">
-            </figure>
             
+            &nbsp;
             <h1 class="over-mij__info--title">
               Hallo, mijn naam is<span class="text--orange"> Ali Celiksu</span>&nbsp; <span class="wave">👋</span>
             </h1>
@@ -68,7 +67,6 @@
               In deze portfolio kan je lezen wat ik doe op school en wat mijn vaardigheden zijn.
             </p>
 
-
             <div class="over-mij__links">
               <a href="https://github.com/AliCMA" class="over-mij__link">
                 <i class="fab fa-github"></i>
@@ -81,9 +79,6 @@
               </a>
             </div>
           </div>
-          <figure class="over-mij__img--container">
-            <img src="img/documenten/undraw_websites.svg" class="over-mij__img" alt="">
-          </figure>
         </div>
       </div>
     </div>
@@ -127,6 +122,32 @@
         </div>
       </div>
     </div>
+     <!-- #region -->
+     &nbsp;
+     <div class="inputs">
+       <div>
+       <input id="checkbox-soulslike" type="checkbox" class="filter">
+       <label for="checkbox-soulslike" class="label"><a href="https://32778.hosts1.ma-cloud.nl/f1m2js/BLOG/">Pikmin BLOG</a></label>
+       </div>
+       <div>
+           <input id="checkbox-rpg" type="checkbox" class="filter">
+       <label for="checkbox-rpg" class="label"><a href="https://32778.hosts1.ma-cloud.nl/f1m2js/UXD%20Forum/">Forms formulier</a></label>
+       </div>
+       <div>
+           <input  id="checkbox-action" type="checkbox" class="filter">
+           <label for="checkbox-action" class="label"><a href="https://32778.hosts1.ma-cloud.nl/f1m2js/SEO%20Opdracht/">SEO opdracht</a></label>
+       </div>
+
+       
+      
+     </div>
+
+   <ul class="games">
+       <li class="game" data-category="action"><img src="img/documenten/eindhoven.jpg" alt="Site over een eindhoven developer"></li>
+       <li class="game" data-category="soulslike"><img src="img/documenten/PikminBLOG.jpg" alt="Pikmin BLOG, pikmin, diamond pokemon & yoshi"></li>
+       <li class="game" data-category="rpg"><img src="img/documenten/forum.png" alt="Een forum"></li>
+   </ul>
+     <!-- #region -->
 </section>
 
 

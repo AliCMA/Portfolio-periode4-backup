@@ -8,6 +8,7 @@
   <title>Portfolio Ali Çeliksu</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script src="filtler.js" defer></script>
 </head>
 <body>
 
@@ -16,11 +17,11 @@
       <div class="persoonlijk_logo">Portfolio Ali Çeliksu</div>
       <ul class="nav__link--list">
         <li class="nav__link">
-          <a href="index.html" class="
+          <a href="indexeng.html" class="
         nav__link--anchor
         link__hover-effect
         link__hover-effect--white
-      ">NL</a>
+      ">ENG</a>
         </li>
         <li class="nav__link">
           <a href="#projects" class="
@@ -44,8 +45,6 @@
         </li>
       </ul>
     </nav>
-
-
   
     <div id="over-mij">
        &nbsp;
@@ -53,23 +52,19 @@
       <div class="flex flex-1">
         <div class="over-mij__info row">
           <div class="over-mij__info--container">
-            <figure class="over-mij__picture--logoschool">
-              <img src="img/documenten/logoma2.webp" class="over-mij__picture" alt="Logo van de school waar ik op zit">
-            </figure>
-
+            
+            &nbsp;
             <h1 class="over-mij__info--title">
               Hello, my name is<span class="text--orange"> Ali Celiksu</span>&nbsp; <span class="wave">👋</span>
             </h1>
             <p class="over-mij__info--para">
-              I'm a <strong class="text--orange">emerging software developer</strong> 
-              I love to program site using HTML & CSS.
+              Im a <strong class="text--orange">emerging software developer</strong> I like to program site using HTML & CSS.
             </p>
 
             <p class="over-mij__info--para">
-              I made this <strong class="text--orange">portfolio </strong> as an assignment for school. 
+              This <strong class="text--orange">portfolio </strong> I made as an assignment for school. 
               In this portfolio you can read what I do at school and what my skills are.
             </p>
-
 
             <div class="over-mij__links">
               <a href="https://github.com/AliCMA" class="over-mij__link">
@@ -83,20 +78,17 @@
               </a>
             </div>
           </div>
-          <figure class="over-mij__img--container">
-            <img src="img/documenten/undraw_websites.svg" class="over-mij__img" alt="">
-          </figure>
         </div>
       </div>
     </div>
-  </header>  
-  
-   <!-- Begin van mijn main-->
+  </header> 
+
+  <!-- Begin van mijn main-->
   <main>
   <section id="languages">
     <div class="container">
       <div class="row">
-        <h2 class="section__title">Here I am right now <span class="text--orange">busy with</span></h2>
+        <h2 class="section__title">Here i am at the moment <span class="text--orange">working on</span></h2>
         <div class="language__list">
           <div class="language">
             <figure class="language__img--wrapper">
@@ -129,6 +121,32 @@
         </div>
       </div>
     </div>
+     <!-- #region -->
+     &nbsp;
+     <div class="inputs">
+       <div>
+       <input id="checkbox-soulslike" type="checkbox" class="filter">
+       <label for="checkbox-soulslike" class="label"><a href="https://32778.hosts1.ma-cloud.nl/f1m2js/BLOG/">Pikmin BLOG</a></label>
+       </div>
+       <div>
+           <input id="checkbox-rpg" type="checkbox" class="filter">
+       <label for="checkbox-rpg" class="label"><a href="https://32778.hosts1.ma-cloud.nl/f1m2js/UXD%20Forum/">Forms formulier</a></label>
+       </div>
+       <div>
+           <input  id="checkbox-action" type="checkbox" class="filter">
+           <label for="checkbox-action" class="label"><a href="https://32778.hosts1.ma-cloud.nl/f1m2js/SEO%20Opdracht/">SEO opdracht</a></label>
+       </div>
+
+       
+      
+     </div>
+
+   <ul class="games">
+       <li class="game" data-category="action"><img src="img/documenten/eindhoven.jpg" alt="Site over een eindhoven developer"></li>
+       <li class="game" data-category="soulslike"><img src="img/documenten/PikminBLOG.jpg" alt="Pikmin BLOG, pikmin, diamond pokemon & yoshi"></li>
+       <li class="game" data-category="rpg"><img src="img/documenten/forum.png" alt="Een forum"></li>
+   </ul>
+     <!-- #region -->
 </section>
 
 
@@ -193,7 +211,7 @@
                   Html, CSS
                 </h4>
                 <p class="project__beschrijving--para">
-                  With this module you had to individually make a blog about Pikmin bloom and 2 other topics, I chose Yoshi and Pokemon diamond.
+                  With this module you had to individually blog about Pikmin bloom and 2 other topics, I chose Yoshi and Pokemon diamond.
                 </p>
                 <div class="project__beschrijving--links">
                   <a href="https://github.com/AliCMA/Pikmin-BLOG/tree/main/BLOG" target="_blank"
