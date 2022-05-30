@@ -10,6 +10,7 @@
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
   <script src="filtler.js" defer></script>
 </head>
+
 <body>
 
   <header>
@@ -45,24 +46,25 @@
         </li>
       </ul>
     </nav>
-  
+
     <div id="over-mij">
-       &nbsp;
+      &nbsp;
 
       <div class="flex flex-1">
         <div class="over-mij__info row">
           <div class="over-mij__info--container">
-            
+
             &nbsp;
             <h1 class="over-mij__info--title">
               Hello, my name is<span class="text--orange"> Ali Celiksu</span>&nbsp; <span class="wave">👋</span>
             </h1>
             <p class="over-mij__info--para">
-              Im a <strong class="text--orange">emerging software developer</strong> I like to program site using HTML & CSS.
+              Im a <strong class="text--orange">emerging software developer</strong> I like to program site using HTML &
+              CSS.
             </p>
 
             <p class="over-mij__info--para">
-              This <strong class="text--orange">portfolio </strong> I made as an assignment for school. 
+              This <strong class="text--orange">portfolio </strong> I made as an assignment for school.
               In this portfolio you can read what I do at school and what my skills are.
             </p>
 
@@ -81,176 +83,207 @@
         </div>
       </div>
     </div>
-  </header> 
+  </header>
 
   <!-- Begin van mijn main-->
   <main>
-  <section id="languages">
-    <div class="container">
-      <div class="row">
-        <h2 class="section__title">Here i am at the moment <span class="text--orange">working on</span></h2>
-        <div class="language__list">
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                  alt="Html Logo" class="language__img" />
-              </a>
-            </figure>
-            <span class="language__name"> <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU">HTML</a></span>
-          </div>
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <a href="https://www.youtube.com/watch?v=1Rs2ND1ryYc">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS Logo"
-                  class="language__img" />
-              </a>
-            </figure>
-            <span class="language__name"> <a href="https://www.youtube.com/watch?v=1Rs2ND1ryYc">CSS</a></span>
-          </div>
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript Logo"
-                  class="language__img" />
-              </a>
-            </figure>
-            <span class="language__name"><a href="https://www.youtube.com/watch?v=PkZNo7MFNFg">JavaScript</a></span>
+    <section class="body-section">
+      <div>
+        <h2>Talk to me!</h2>
+        <h4 id="message">Click on me and talk with me for help</h4>
+        <br>
+          <button onclick="startRecognition()">Click for talking</button>
+        <div id="result" class="hide"></div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </section>
+    <section id="languages">
+      <div class="container">
+        <div class="row">
+          <h2 class="section__title">Here i am at the moment <span class="text--orange">working on</span></h2>
+          <div class="language__list">
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                    alt="Html Logo" class="language__img" />
+                </a>
+              </figure>
+              <span class="language__name"> <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU">HTML</a></span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <a href="https://www.youtube.com/watch?v=1Rs2ND1ryYc">
+                  <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS Logo"
+                    class="language__img" />
+                </a>
+              </figure>
+              <span class="language__name"> <a href="https://www.youtube.com/watch?v=1Rs2ND1ryYc">CSS</a></span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg">
+                  <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript Logo"
+                    class="language__img" />
+                </a>
+              </figure>
+              <span class="language__name"><a href="https://www.youtube.com/watch?v=PkZNo7MFNFg">JavaScript</a></span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-     <!-- #region -->
-     &nbsp;
-     <div class="inputs">
-       <div>
-       <input id="checkbox-soulslike" type="checkbox" class="filter">
-       <label for="checkbox-soulslike" class="label"><a href="https://32778.hosts1.ma-cloud.nl/f1m2js/BLOG/">Pikmin BLOG</a></label>
-       </div>
-       <div>
-           <input id="checkbox-rpg" type="checkbox" class="filter">
-       <label for="checkbox-rpg" class="label"><a href="https://32778.hosts1.ma-cloud.nl/f1m2js/UXD%20Forum/">Forms formulier</a></label>
-       </div>
-       <div>
-           <input  id="checkbox-action" type="checkbox" class="filter">
-           <label for="checkbox-action" class="label"><a href="https://32778.hosts1.ma-cloud.nl/f1m2js/SEO%20Opdracht/">SEO opdracht</a></label>
-       </div>
-
-       
-      
-     </div>
-
-   <ul class="games">
-       <li class="game" data-category="action"><img src="img/documenten/eindhoven.jpg" alt="Site over een eindhoven developer"></li>
-       <li class="game" data-category="soulslike"><img src="img/documenten/PikminBLOG.jpg" alt="Pikmin BLOG, pikmin, diamond pokemon & yoshi"></li>
-       <li class="game" data-category="rpg"><img src="img/documenten/forum.png" alt="Een forum"></li>
-   </ul>
-     <!-- #region -->
-</section>
+      <!-- #region -->
+      &nbsp;
+      <div class="inputs">
+        <div>
+          <input id="checkbox-soulslike" type="checkbox" class="filter">
+          <label for="checkbox-soulslike" class="label"><a href="https://www.linkedin.com/in/ali-celiksu-b58b8523b">School</a></label>
+        </div>
+        <div>
+          <input id="checkbox-rpg" type="checkbox" class="filter">
+          <label for="checkbox-rpg" class="label"><a href="https://www.ma-web.nl/opleidingen/opleidingsoverzicht/softwaredeveloper/">
+            Education</a></label>
+        </div>
+        <div>
+          <input id="checkbox-action" type="checkbox" class="filter">
+          <label for="checkbox-action" class="label"><a
+              href="https://32778.hosts1.ma-cloud.nl/f1m2js/SEO%20Opdracht/">linkedin </a></label>
+        </div>
+        
 
 
-  <section id="projects">
-    <div class="container">
-      <div class="row">
-        <h2 class="section__title">These are some of my <span class="text--orange">projects</span></h2>
-        <ul class="project__list">
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="img/documenten/bewijs1.webp" class="project__img" alt="Dashboard van mij ">
-              <div class="project__beschrijving">
-                <h3 class="project__beschrijving--title"> <a
-                    href="https://32778.hosts1.ma-cloud.nl/f1m2js/Duurzaam%20dashboard/">Duurzaamhuis dashboard</a>
-                </h3>
-                &nbsp;
-                <h4 class="project__beschrijving--sub-title">
-                  Html, CSS, JavaScript, IOT.
-                </h4>
-                <p class="project__beschrijving--para">
-                  We had to do this at the Duurzaamhuis, I made this dashboard together with 2 other classmates.
-                </p>
-                <div class="project__beschrijving--links">
-                  <a href="https://github.com/YusufOMA/duurzaam-huis" target="_blank"
-                    class="project__beschrijving--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="img/documenten/bewijs2.webp" class="project__img" alt="Scheepvaartsmuseum">
-              <div class="project__beschrijving">
-                <h3 class="project__beschrijving--title"> <a
-                    href="https://32778.hosts1.ma-cloud.nl/f1m2js/FULL%20BO%20SITE/">Scheepvaartsmuseum </a> </h3>
-                &nbsp;
-                <h4 class="project__beschrijving--sub-title">
-                  Html, CSS, JavaScript
-                </h4>
-                <p class="project__beschrijving--para">
-                  In this module I worked together with my classmate and we made a site about the Maritime Museum.
-                </p>
-                <div class="project__beschrijving--links">
-                  <a href="https://github.com/AliCMA/BeroepsOpdrachtSite" target="_blank"
-                    class="project__beschrijving--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="img/documenten/bewijs4.webp" class="project__img" alt="Scheepvaartsmuseum">
-              <div class="project__beschrijving">
-                <h3 class="project__beschrijving--title"> <a href="https://32778.hosts1.ma-cloud.nl/f1m2js/BLOG/">Pikmin
-                    BLOG </a> </h3>
-                &nbsp;
-                <h4 class="project__beschrijving--sub-title">
-                  Html, CSS
-                </h4>
-                <p class="project__beschrijving--para">
-                  With this module you had to individually blog about Pikmin bloom and 2 other topics, I chose Yoshi and Pokemon diamond.
-                </p>
-                <div class="project__beschrijving--links">
-                  <a href="https://github.com/AliCMA/Pikmin-BLOG/tree/main/BLOG" target="_blank"
-                    class="project__beschrijving--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="img/documenten//bewijs3.webp" class="project__img" alt="Car subscription project">
-              <div class="project__beschrijving">
-                <h3 class="project__beschrijving--title"><a
-                    href="https://32778.hosts1.ma-cloud.nl/f1m2js/landingspage/">
-                    Japan musea</a></h3>
-                &nbsp;
-                <h4 class="project__beschrijving--sub-title">
-                  Html, CSS, JavaScript
-                </h4>
-                <p class="project__beschrijving--para">
-                  In this module I was going to make a Japan museu site at ONT, you can find text and accompanying images on it.
-                </p>
-                <div class="project__beschrijving--links">
-                  <a href="https://github.com/AliCMA/Musea-Japan" target="_blank" class="project__beschrijving--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
       </div>
-    </div>
-    <iframe class="googlemaps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d38977.93978247422!2d4.874537650000001!3d52.36822165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1snl!2snl!4v1653898768188!5m2!1snl!2snl" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
-</main>
-<!-- Einde van mijn main-->
+
+      <ul class="games">
+        <li class="game" data-category="action"><img src="img/documenten/FilterAfbeelding1.webp"
+            alt="Site over een eindhoven developer"></li>
+        <li class="game" data-category="soulslike"><img src="img/documenten/FilterAfbeelding2.webp"
+            alt="Pikmin BLOG, pikmin, diamond pokemon & yoshi"></li>
+        <li class="game" data-category="rpg"><img src="img/documenten/FilterAfbeelding3.webp" alt="Een forum"></li>
+      </ul>
+      <!-- #region -->
+    </section>
+
+
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h2 class="section__title">These are some of my <span class="text--orange">projects</span></h2>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="img/documenten/bewijs1.webp" class="project__img" alt="Dashboard van mij ">
+                <div class="project__beschrijving">
+                  <h3 class="project__beschrijving--title"> <a
+                      href="https://32778.hosts1.ma-cloud.nl/f1m2js/Duurzaam%20dashboard/">Duurzaamhuis dashboard</a>
+                  </h3>
+                  &nbsp;
+                  <h4 class="project__beschrijving--sub-title">
+                    Html, CSS, JavaScript, IOT.
+                  </h4>
+                  <p class="project__beschrijving--para">
+                    We had to do this at the Duurzaamhuis, I made this dashboard together with 2 other classmates.
+                  </p>
+                  <div class="project__beschrijving--links">
+                    <a href="https://github.com/YusufOMA/duurzaam-huis" target="_blank"
+                      class="project__beschrijving--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="img/documenten/bewijs2.webp" class="project__img" alt="Scheepvaartsmuseum">
+                <div class="project__beschrijving">
+                  <h3 class="project__beschrijving--title"> <a
+                      href="https://32778.hosts1.ma-cloud.nl/f1m2js/FULL%20BO%20SITE/">Scheepvaartsmuseum </a> </h3>
+                  &nbsp;
+                  <h4 class="project__beschrijving--sub-title">
+                    Html, CSS, JavaScript
+                  </h4>
+                  <p class="project__beschrijving--para">
+                    In this module I worked together with my classmate and we made a site about the Maritime Museum.
+                  </p>
+                  <div class="project__beschrijving--links">
+                    <a href="https://github.com/AliCMA/BeroepsOpdrachtSite" target="_blank"
+                      class="project__beschrijving--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="img/documenten/bewijs4.webp" class="project__img" alt="Scheepvaartsmuseum">
+                <div class="project__beschrijving">
+                  <h3 class="project__beschrijving--title"> <a
+                      href="https://32778.hosts1.ma-cloud.nl/f1m2js/BLOG/">Pikmin
+                      BLOG </a> </h3>
+                  &nbsp;
+                  <h4 class="project__beschrijving--sub-title">
+                    Html, CSS
+                  </h4>
+                  <p class="project__beschrijving--para">
+                    With this module you had to individually blog about Pikmin bloom and 2 other topics, I chose Yoshi
+                    and Pokemon diamond.
+                  </p>
+                  <div class="project__beschrijving--links">
+                    <a href="https://github.com/AliCMA/Pikmin-BLOG/tree/main/BLOG" target="_blank"
+                      class="project__beschrijving--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="img/documenten//bewijs3.webp" class="project__img" alt="Car subscription project">
+                <div class="project__beschrijving">
+                  <h3 class="project__beschrijving--title"><a
+                      href="https://32778.hosts1.ma-cloud.nl/f1m2js/landingspage/">
+                      Japan musea</a></h3>
+                  &nbsp;
+                  <h4 class="project__beschrijving--sub-title">
+                    Html, CSS, JavaScript
+                  </h4>
+                  <p class="project__beschrijving--para">
+                    In this module I was going to make a Japan museu site at ONT, you can find text and accompanying
+                    images on it.
+                  </p>
+                  <div class="project__beschrijving--links">
+                    <a href="https://github.com/AliCMA/Musea-Japan" target="_blank" class="project__beschrijving--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <iframe class="googlemaps"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d38977.93978247422!2d4.874537650000001!3d52.36822165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1snl!2snl!4v1653898768188!5m2!1snl!2snl"
+        height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+  <!-- Einde van mijn main-->
 
   <footer>
     <div class="row footer__row">
