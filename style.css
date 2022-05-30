@@ -582,6 +582,10 @@ footer {
   object-fit: contain;
 }
 
+.googlemaps{
+  width: 100%;
+}
+
 @keyframes away {
   from {
       transform: scaleX(1);
