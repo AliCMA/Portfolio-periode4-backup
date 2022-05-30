@@ -570,7 +570,10 @@ img.avatar {
 }
 
 span.psw {
-  float: right;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  
   padding-top: 16px;
 }
 
@@ -643,7 +646,6 @@ span.psw {
 @media screen and (max-width: 300px) {
   span.psw {
     display: block;
-    float: none;
   }
 
   .cancelbtn {
