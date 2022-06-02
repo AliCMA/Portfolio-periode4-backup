@@ -575,12 +575,16 @@ footer {
 .hide {
   display: none;
 }
+
 #result {
-  margin-top: 2em;
+  margin-top: 5em;
   background: #EF476F;
   border-radius: 10px;
   padding: 2rem;
   color: #fff;
+  position: absolute;
+  left: 39%;
+  max-width: 20rem;
 }
 button {
   padding: 0.75rem;
