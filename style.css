@@ -143,10 +143,10 @@ section.loader{
 section .loader .dot{
   position: relative;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   background: #fff;
-  margin: 20px 10px;
+  margin: 1.25rem 0.625rem;
  /* transform: scale(0.1); */
   border-radius: 50%;
   animation: animateDot 2s linear infinite;
@@ -579,7 +579,7 @@ footer {
 #result {
   margin-top: 5em;
   background: #EF476F;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   padding: 2rem;
   color: #fff;
   position: absolute;
@@ -589,7 +589,7 @@ footer {
 button {
   padding: 0.75rem;
   margin-bottom: 0.5rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background: #06D6A0;
   color: #fff;
   border: none;

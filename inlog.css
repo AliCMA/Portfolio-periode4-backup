@@ -148,10 +148,10 @@ section.loader {
 section .loader .dot {
   position: relative;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   background: #fff;
-  margin: 20px 10px;
+  margin: 1.25rem 0.625rem;
   /* transform: scale(0.1); */
   border-radius: 50%;
   animation: animateDot 2s linear infinite;
@@ -524,8 +524,8 @@ footer {
 input[type=text],
 input[type=password] {
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -535,8 +535,8 @@ input[type=password] {
 button {
   background-color: #04AA6D;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+  padding: 0.875rem 1.25rem;
+  margin: 0.5rem 0;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -549,14 +549,14 @@ button:hover {
 
 .cancelbtn {
   width: auto;
-  padding: 10px 18px;
+  padding: 0.625rem 1.125rem;
   background-color: #f44336;
 }
 
 
 .imgcontainer {
   text-align: center;
-  margin: 24px 0 12px 0;
+  margin: 1.5rem 0 0.75rem 0;
   position: relative;
 }
 
@@ -566,7 +566,7 @@ img.avatar {
 }
 
 .container {
-  padding: 16px;
+  padding: 1rem;
 }
 
 span.psw {
@@ -574,7 +574,7 @@ span.psw {
   align-items: center;
   box-sizing: border-box;
   
-  padding-top: 16px;
+  padding-top: 1rem;
 }
 
 
@@ -589,7 +589,7 @@ span.psw {
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
-  padding-top: 60px;
+  padding-top: 3.75rem;
 }
 
 
@@ -603,10 +603,10 @@ span.psw {
 
 .close {
   position: absolute;
-  right: 25px;
+  right: 1.5625rem;
   top: 0;
   color: #000;
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-weight: bold;
 }
 
@@ -643,7 +643,7 @@ span.psw {
 }
 
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 18.75rem) {
   span.psw {
     display: block;
   }
