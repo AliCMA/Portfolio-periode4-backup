@@ -527,7 +527,7 @@ input[type=password] {
   padding: 0.75rem 1.25rem;
   margin: 0.5rem 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 0,0625rem solid #ccc;
   box-sizing: border-box;
 }
 
@@ -596,7 +596,7 @@ span.psw {
 .model-stijl {
   background-color: #fefefe;
   margin: 5% auto 15% auto;
-  border: 1px solid #888;
+  border: 0,0625rem solid #888;
   width: 80%;
 }
 
