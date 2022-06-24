@@ -57,8 +57,8 @@ actionSpeech = (speechText) => {
       image1.style.width = "400px";
       image1.classList.remove("hide") // show image
       break;
-    case "sonraki sayfaya git": 
-      window.open("http://32778.hosts1.ma-cloud.nl/f1m2js/Portfolio/", "_self");
+    case "sonraki sayfa": 
+      window.open("https://32778.hosts1.ma-cloud.nl/makeitrain/index.html", "_self");
       break;
     case "ali":
         window.open("https://www.linkedin.com/in/ali-celiksu-b58b8523b/");

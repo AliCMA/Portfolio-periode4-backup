@@ -93,15 +93,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       ">Login</a>
         </li>
         <li class="nav__link">
-          <a href="contact.html" class="
+          <a href="index.html" class="
         nav__link--anchor
         nav__link--anchor-primary
-      ">Contact</a>
+      ">Home</a>
         </li>
       </ul>
     </nav>
 
-    <div class="container">
+    <div class="container5715">
         <h1 class="h1-titel">Website pakket!</h1>
         <br>
         <section class="contact">

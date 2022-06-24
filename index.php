@@ -66,7 +66,9 @@ $result = $connection->query('SELECT * FROM `portfolio`');
             <h2><?php echo $row ['inhoud'];  ?></h2>
         </header>
         <h2><?php echo $row ['beschrijving'];  ?></h2>
+        <div class="meerinfo">
         <a href="details.php?id=<?php echo $row ['id'];?>"><b>Meer informatie</b></a>
+        </div>
     </article>
     <?php endforeach; ?>
 

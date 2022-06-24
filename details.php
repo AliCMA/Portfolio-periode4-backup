@@ -2,16 +2,16 @@
 require 'functions.php';
 $connection = dbConnect();
 
-if( !isset($_GET['id']) ){
-    echo "De ID is niet gezet";
-    exit;
+if (!isset($_GET['id'])) {
+  echo "De ID is niet gezet";
+  exit;
 }
 
 $id = $_GET['id'];
 $check_int = filter_var($id, FILTER_VALIDATE_INT);
-if($check_int == false){
-    echo "Dit is geen getal (interger)";
-    exit;
+if ($check_int == false) {
+  echo "Dit is geen getal (interger)";
+  exit;
 }
 
 
@@ -19,10 +19,10 @@ if($check_int == false){
 $statement = $connection->prepare('SELECT * FROM `portfolio` WHERE id=?');
 $params = [$id];
 $statement->execute($params);
-$place =$statement->fetch(PDO::FETCH_ASSOC);
+$place = $statement->fetch(PDO::FETCH_ASSOC);
 $pakketen = $connection->query('SELECT * FROM `portfolio`');
 ?>
- 
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,6 +37,7 @@ $pakketen = $connection->query('SELECT * FROM `portfolio`');
   <script src="filtler.js" defer></script>
   <script src="spraak.js" defer></script>
 </head>
+
 <body>
 
   <header>
@@ -71,73 +72,72 @@ $pakketen = $connection->query('SELECT * FROM `portfolio`');
       ">Contact</a>
         </li>
       </ul>
-    </nav>
+    </nav>  
 
-   
 
-    <div class="container place-details">
-        <h1>Website pakket!</h1>
-        <section>
-            <article class="place-info">
-                <header class="headertype">
-                    <h2><?php echo $place['pakket']?></h2>
-                    <h3><?php echo $place['inhoud']?></h3>
-                </header> 
-                <figure style="background-image: url(images/<?php echo $place['foto']?>)">
-                    <em>€<?php echo $place['prijs']?></em>
-                </figure>
-                <p>
-                <?php echo $place['beschrijving']?>
-                </p>
-                <hr>
-                <a href="contact.php" class="link-button">Neem contact op!</a>
-                <hr>
-                <a href="index.php">Terug naar het overzicht</a>
-            </article>
-            <aside class="places-sidebar">
-                <h3>Andere bundels</h3>
-                <ul>
-                <?php foreach($pakketen as $row): ?>
-                    <li><a href="details.php?id=<?php echo $row ['id'];?>"><?php echo $row ['pakket'];?></a></li> 
-                    <?php endforeach; ?>
-                </ul>
-                
-   
-            </aside>
-        </section>
+
+    <div class="container5715 place-details">
+      <h1>Website pakket!</h1>
+      <section>
+        <article class="place-info">
+          <header class="headertype">
+            <h2><?php echo $place['pakket'] ?></h2>
+            <h3><?php echo $place['inhoud'] ?></h3>
+          </header>
+          <figure style="background-image: url(images/<?php echo $place['foto'] ?>)">
+            <em>€<?php echo $place['prijs'] ?></em>
+          </figure>
+          <p>
+            <?php echo $place['beschrijving'] ?>
+          </p>
+          <hr>
+          <a href="contact.php" class="link-button">Neem contact op!</a>
+          <hr>
+          <a href="index.php">Terug naar het overzicht</a>
+        </article>
+        <aside class="places-sidebar">
+          <h3>Andere bundels</h3>
+          <ul>
+            <?php foreach ($pakketen as $row) : ?>
+              <li><a href="details.php?id=<?php echo $row['id']; ?>"><?php echo $row['pakket']; ?></a></li>
+            <?php endforeach; ?>
+          </ul>
+
+
+        </aside>
+      </section>
     </div>
 
 
 
 
 
-  <footer>
-    <div class="row footer__row">
-      <a href="#" class="footer__anchor">
-        <figure class="footer__logo">
-          <img src="img/documenten/logo-top3.webp" class="footer__logo--img"
-            alt="Top knop, deze brengt je naar de top van de website">
-        </figure>
-        <span class="footer__logo--popper">
-          Top
-          <i class="fas fa-arrow-up"></i>
-        </span>
-      </a>
-      <div class="footer__social--lijst">
-        <a href="https://github.com/AliCMA" target="_blank" class="
+    <footer>
+      <div class="row footer__row">
+        <a href="#" class="footer__anchor">
+          <figure class="footer__logo">
+            <img src="img/documenten/logo-top3.webp" class="footer__logo--img" alt="Top knop, deze brengt je naar de top van de website">
+          </figure>
+          <span class="footer__logo--popper">
+            Top
+            <i class="fas fa-arrow-up"></i>
+          </span>
+        </a>
+        <div class="footer__social--lijst">
+          <a href="https://github.com/AliCMA" target="_blank" class="
           footer__social--link
           link__hover-effect
           link__hover-effect--white
         "><i class="fab fa-github"></i></a>
-        <a href="contact.html" target="_blank" class="
+          <a href="contact.html" target="_blank" class="
           footer__social--link
           link__hover-effect
           link__hover-effect--white
         ">📧 </a>
+        </div>
+        <div class="footer__copyright">Copyright © 2022 Portfolio | Ali Celiksu</div>
       </div>
-      <div class="footer__copyright">Copyright © 2022 Portfolio | Ali Celiksu</div>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>
