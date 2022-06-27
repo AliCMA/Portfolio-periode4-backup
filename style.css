@@ -80,6 +80,10 @@ li {
 
 .container {
   padding: 3.125rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20%;
 }
 
 .row {
@@ -160,6 +164,8 @@ section .loader .dot{
   color: orange;
   margin: 0 0.75rem;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -742,6 +748,15 @@ h1 {
   background-size: cover;
   height: 19rem;
 }
+
+.bedankt{
+  display: flex;
+  justify-content: center;
+}
+
+.contact-bedankt{
+ 
+} 
 
 .places-list__place h2 {
   font-size: 1.5rem;
